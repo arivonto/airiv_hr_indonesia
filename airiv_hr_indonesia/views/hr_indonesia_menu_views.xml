@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <menuitem id="menu_hr_indonesia_root"
+                  name="HR &amp; Kehadiran"
+                  web_icon="airiv_hr_indonesia,static/description/icon.png"
+                  sequence="4"/>
+
+        <menuitem id="menu_hr_overtime_spkl"
+                  name="Lembur Karyawan (SPKL)"
+                  parent="menu_hr_indonesia_root"
+                  action="action_hr_overtime_indonesia"
+                  sequence="1"/>
+
+        <menuitem id="menu_hr_workplace_zones"
+                  name="Zona Geofencing GPS"
+                  parent="menu_hr_indonesia_root"
+                  action="action_hr_workplace_zone"
+                  sequence="2"/>
+    </data>
+</odoo>

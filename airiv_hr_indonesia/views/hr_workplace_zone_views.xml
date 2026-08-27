@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_hr_workplace_zone_tree" model="ir.ui.view">
+            <field name="name">hr.workplace.zone.list</field>
+            <field name="model">hr.workplace.zone</field>
+            <field name="arch" type="xml">
+                <list string="Zona Geofencing Lokasi Kerja">
+                    <field name="name"/>
+                    <field name="latitude"/>
+                    <field name="longitude"/>
+                    <field name="allowed_radius_meters"/>
+                    <field name="company_id"/>
+                    <field name="active" widget="boolean_toggle"/>
+                </list>
+            </field>
+        </record>
+
+        <record id="view_hr_workplace_zone_form" model="ir.ui.view">
+            <field name="name">hr.workplace.zone.form</field>
+            <field name="model">hr.workplace.zone</field>
+            <field name="arch" type="xml">
+                <form string="Zona Lokasi Kerja (Geofence)">
+                    <sheet>
+                        <div class="oe_title">
+                            <span class="o_form_label">Titik Koordinat Lokasi Kerja</span>
+                            <h1><field name="name" placeholder="misal: Klinik Pusat Rempoa"/></h1>
+                        </div>
+                        <group>
+                            <group string="Koordinat GPS (Pusat Lokasi)">
+                                <field name="latitude"/>
+                                <field name="longitude"/>
+                                <field name="allowed_radius_meters"/>
+                            </group>
+                            <group string="Pengaturan Cabang">
+                                <field name="company_id"/>
+                                <field name="active"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_hr_workplace_zone" model="ir.actions.act_window">
+            <field name="name">Zona Lokasi Kerja (GPS)</field>
+            <field name="res_model">hr.workplace.zone</field>
+            <field name="view_mode">list,form</field>
+        </record>
+    </data>
+</odoo>

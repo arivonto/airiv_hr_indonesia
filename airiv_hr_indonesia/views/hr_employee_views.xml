@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_employee_form_inherit_hr_indonesia" model="ir.ui.view">
+            <field name="name">hr.employee.form.inherit.indonesia</field>
+            <field name="model">hr.employee</field>
+            <field name="inherit_id" ref="hr.view_employee_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//notebook" position="inside">
+                    <page string="🇮🇩 Geofencing &amp; Lembur Kemnaker">
+                        <group>
+                            <group string="Penugasan Lokasi Absensi">
+                                <field name="workplace_zone_id"/>
+                            </group>
+                            <group string="Upah Dasar Lembur (Kemnaker PP 35/2021)">
+                                <field name="basic_salary"/>
+                                <field name="depnaker_hourly_rate" readonly="1" class="font-weight-bold text-primary"/>
+                            </group>
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
