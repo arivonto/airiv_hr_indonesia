@@ -3,7 +3,7 @@
     <data>
         <menuitem id="menu_hr_indonesia_root"
                   name="HR &amp; Kehadiran"
-                  web_icon="airiv_hr_indonesia,static/description/icon.png"
+                  web_icon="airiv_hr_indonesia,static/description/airiv_store_icon_128.png"
                   sequence="4"/>
 
         <menuitem id="menu_hr_overtime_spkl"

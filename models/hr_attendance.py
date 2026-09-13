@@ -15,12 +15,11 @@ class HrAttendance(models.Model):
             ('refused', 'Lembur Ditolak'),
         ],
         ondelete={
-            'pending': 'set default',
-            'approved': 'set default',
-            'refused': 'set default',
+            'pending': 'set null',
+            'approved': 'set null',
+            'refused': 'set null',
         },
         string="Status Lembur",
-        default='none',
         tracking=True,
     )
 
