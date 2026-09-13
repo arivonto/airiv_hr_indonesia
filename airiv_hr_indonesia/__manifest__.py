@@ -5,7 +5,7 @@
     'category': 'Human Resources/Localizations',
     'summary': 'Manajemen Ketenagakerjaan Sesuai UU Cipta Kerja',
     'description': 'Modul Sumber Daya Manusia dan Ketenagakerjaan Indonesia.',
-    'author': 'Riv Cloud Management',
+    'author': 'AIRIV',
     'website': 'https://airiv.id',
     'url': 'https://github.com/arivonto/airiv_hr_indonesia/blob/18.0/static/description/index.html',
     'license': 'LGPL-3',
